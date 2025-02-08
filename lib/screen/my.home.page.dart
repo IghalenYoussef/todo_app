@@ -83,6 +83,9 @@ class _MyHomePageState extends State<MyHomePage> {
       appBar: AppBar(
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
         title: Text(widget.title),
+        actions: [
+          IconButton(onPressed: () => _showAddTodoDialog(context), icon: Icon(Icons.add))
+        ],
       ),
       body: ListView.builder(
           itemCount: todoList.length,
@@ -110,11 +113,11 @@ class _MyHomePageState extends State<MyHomePage> {
               ),
             );
           }),
-      floatingActionButton: FloatingActionButton(
+      /*floatingActionButton: FloatingActionButton(
         onPressed:() => _showAddTodoDialog(context),
         tooltip: 'Increment',
         child: const Icon(Icons.add),
-      ),
+      ),*/
     );
   }
 }
