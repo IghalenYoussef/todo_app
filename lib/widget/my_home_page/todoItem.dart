@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 
 import '../../models/todo.dart';
 
-class Todoitem extends StatelessWidget {
-  Todoitem({super.key, required this.todo, required this.onTap});
+class TodoItem extends StatelessWidget {
+  TodoItem({super.key, required this.todo, required this.onTap});
 
   Todo todo;
   VoidCallback onTap;
